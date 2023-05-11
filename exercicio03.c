@@ -2,18 +2,19 @@
 
 int main ()
 {
-    int num, resp;
+    int N, contador, impar;
 
     printf("Digite um numero inteiro:\n");
-    scanf("%d", &num);
+    scanf("%d", &N);
 
-    resp = 1;
+    impar = 1;
+    contador = 1;
 
-    while (resp < num)
+    while (contador <= N)
     {
-        printf("%d ", resp);
-        resp = resp + 2;
-        
+        printf("%d ", impar);
+        impar = impar + 2;
+        contador = contador + 1;
     }
     
 
