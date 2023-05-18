@@ -5,7 +5,7 @@
 */
 int main ()
 {
-    float N, S = 0, sinal = -1.0;
+    float N, S = 0, sinal = 1.0;
     int i;
     
     printf("Digite um numero:\n");

@@ -2,8 +2,8 @@
 
 int main ()
 {
-    int num, i = 0, soma = 0;
-    float media;
+    int num, i = 0;
+    float soma = 0.0, media;
 
     do
     {

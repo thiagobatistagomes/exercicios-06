@@ -1,26 +1,29 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int N;
-    float S = 0;
+    float soma = 0.0;
+    int numerador = 1, denominador = 1;
+    int sinal = 1; 
+    int contador = 0; 
 
-    printf("Digite um numero: ");
+ 
     scanf("%d", &N);
 
-    int numerador = 1;
-    int denominador = 1;
-    int sinal = 1;
+    for (int i = 1; i <= N; i++) {
+        soma += sinal * (float)numerador / denominador;
 
-    for (int i = 1; i <= N; i++)
-    {
-        S += (float) (sinal * numerador) / denominador;
         numerador += 2;
-        denominador += 1;
-        sinal *= -1;
+        denominador++;
+
+        contador++;
+        if (contador == 2) {
+            sinal *= -1; 
+            contador = 0; 
+        }
     }
 
-    printf("A soma dos %d primeiros termos da expressão e: %.2f\n", N, S);
+    printf("%.2f\n", soma);
 
     return 0;
 }
