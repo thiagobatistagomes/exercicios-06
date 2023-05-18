@@ -2,7 +2,7 @@
 
 int main ()
 {
-    int N, i, somaDiv;
+    int N, i, somaDiv = 0;
 
     do
     {
@@ -10,7 +10,7 @@ int main ()
         scanf("%d", &N);
     } while (N < 0);
 
-    for(i = 0; i <= N; i++)
+    for(i = 1; i <= N; i++)
     {
         if(N % i == 0)
         {
