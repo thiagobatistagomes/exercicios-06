@@ -13,7 +13,7 @@ int main ()
     for(i = 1; i <= N; i++)
     {
         S += i;
-        i *= -1;
+        i *= (-1);
     }
 
     printf("%d", S);
