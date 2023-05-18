@@ -5,15 +5,15 @@
 */
 int main ()
 {
-    int N, i, S = 0;
+    int N, i, S = 0, sinal = 1;
 
     printf("Digite um numero:\n");
     scanf("%d", &N);
 
     for(i = 1; i <= N; i++)
     {
-        S += i;
-        i *= (-1);
+        S += i * sinal;
+        sinal *= -1;
     }
 
     printf("%d", S);
